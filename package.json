@@ -1,0 +1,19 @@
+{
+  "name": "typescript-issue-19874",
+  "version": "1.0.0",
+  "main": "parse-args.js",
+  "description": "repro for https://github.com/Microsoft/TypeScript/issues/19874",
+  "typings": "parse-args.d.ts",
+  "scripts": {
+    "postinstall": "npm run build",
+    "build": "tsc --declaration --project tsconfig.json"
+  },
+  "author": "aluanh@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "@types/minimist": "^1.2.0",
+    "@types/node": "^8.0.50",
+    "minimist": "^1.2.0"
+  },
+  "repository": {}
+}
